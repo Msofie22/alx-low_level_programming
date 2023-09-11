@@ -12,8 +12,8 @@ int main(void)
 {
 int n;
 
-$rand(time(0));
-n = rand() - RAND_MAX / 2
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
 if ((n % 10) > 5)
 {
