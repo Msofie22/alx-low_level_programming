@@ -17,11 +17,11 @@ putchar(m);
 if (n != 56 || m != 57)
 {
 putchar(',');
-putchar('');
+putchar(' ');
 }
 }
 }
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
