@@ -21,12 +21,12 @@ putchar(l);
 if (n != 55 || m != 56)
 {
 putchar(',')
-putchar('')
+putchar(' ')
 }
 }
 }
 }
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
