@@ -12,9 +12,9 @@ putchar(n);
 if (n != 57)
 {
 puchar(",");
-putchar('');
+putchar(' ');
 }
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
