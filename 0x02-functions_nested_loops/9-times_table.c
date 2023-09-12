@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*times_table - Prints the 9 times table, starting with 0 
+*times_table - Prints the 9 times table, starting with 0
 *Return: empty output
 */
 
@@ -23,7 +23,7 @@ _putchar(u + '0');
 }
 else
 {
-if ( y != 0)
+if (y != 0)
 {
 _putchar(44);
 _putchar(32);
