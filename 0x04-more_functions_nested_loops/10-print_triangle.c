@@ -25,7 +25,7 @@ for (hashes = 1; hashes <= row; hashes++)
 {
 _putchar('0');
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
 }
