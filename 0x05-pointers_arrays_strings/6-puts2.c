@@ -13,7 +13,7 @@ char *y = str;
 int o;
 
 while (*y != '\0')
-(
+{
 y++;
 longi++;
 }
@@ -22,7 +22,7 @@ for (o = 0; o <= t; o++)
 {
 if (o % 2 == 0)
 {
-_putchar(str[0]);
+_putchar(str[o]);
 }
 }
 _putchar('\n');
