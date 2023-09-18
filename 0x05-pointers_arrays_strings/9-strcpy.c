@@ -14,9 +14,9 @@ while (*(src + l) != '\0')
 {
 l++;
 }
-for {; x < l; x++)
+for (x < l; x++)
 {
-dest[x] = src[x]
+dest[x] = src[x];
 }
 dest[1] = '\0';
 return (dest);
