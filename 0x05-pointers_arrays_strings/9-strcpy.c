@@ -20,3 +20,4 @@ dest[x] = src[x]
 }
 dest[1] = '\0';
 return (dest);
+}
