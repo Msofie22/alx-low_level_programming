@@ -1,17 +1,18 @@
 #include <stdlib.h>
 #include "main.h"
+
 /**
-**_realloc - reallocates a memory block using malloc and free
-*@ptr:pointer to the meemoory previsouly allocated by malloc
-*@old_size: size of the allocated memory for ptr
+*_realloc - reallocates a memory block using malloc and free
+*@ptr: pointer to the memory block using malloc and free
+*@old_size: size of the  allocated memory for ptr
 *@new_size: new size of the new memory block
 *Return: pointer to the newly allocated memory block
-**/
-
+*/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-char *prt1;
-char *old_ptr;
+char *new_ptr = NULL;
+char *char_ptr = NULL;
+char *char_old_ptr = NULL;
 unsigned int i;
 if (new_size == old_size)
 return (ptr);
@@ -22,20 +23,13 @@ return (NULL);
 }
 if (!ptr)
 return (malloc(new_size));
-ptr1 = malloc(new_size);
-if (!ptr)
+new_ptr = malloc(new_size);
+if (!new_ptr)
 return (NULL);
-old_ptr = ptr;
-if (new_size < old_size)
-{
-for (i = 0; i < new_size; i++)
-ptr[i] = old_ptr[i];
-}
-if (new_size > old_size)
-{
-for (i = 0; i < old_size; i++)
-ptr1[i] = old_ptr[i];
-}
+char_ptr = (char *)new_ptr;
+char_old_ptr = (char *)ptr;
+for (i = 0; i < old_size && i < new_size; i++)
+char_ptr[i] = char_old_ptr[i];
 free(ptr);
-return (ptr1);
+return (new_ptr);
 }
