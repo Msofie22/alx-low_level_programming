@@ -1,5 +1,5 @@
 #include "main.h"
-
+#
 /**
 *read_textfile - reads a file and prints it
 *@filename: const char*
@@ -26,15 +26,12 @@ r = read(fd, buf, letters);
 if (r == -1)
 {
 free(buf);
-close(fd):
 return (0);
 }
-buf[r] = '\0';
 w = write(STDOUT_FILENO, buf, r);
-if (w == -1 || (size_t)w != letters)
+if (w == -1)
 {
 free(buf);
-close(fd);
 return (0);
 }
 c = close(fd);
