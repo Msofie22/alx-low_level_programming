@@ -14,7 +14,7 @@ return (0);
 buf = malloc(sizeof(char) * letters + 1);
 if (!buf)
 return (0);
-fdd = open(filename, O_RDONLY);
+fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
 free(buf);
