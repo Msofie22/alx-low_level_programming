@@ -22,6 +22,6 @@ for (len = 0; text_content[len] != '\0'; len++)
 w = write(fd, text_content, len);
 if ( w == 1)
 return (-1);
-closed(fd);
+close(fd);
 return (1);
 }
