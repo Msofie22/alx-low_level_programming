@@ -31,9 +31,10 @@ while (r != 0)
 r = read(fd_from, buf, 1024);
 if (r == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n" arg[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98); }
 if (r != 0)
+{
 w = write(fd_to, buf, r);
 if (w == -1)
 {dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
